@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="outer">
+            <div class="title">
+                <span class="iconClass"><img
+                        src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/calculator-512.png" class="icon"
+                        alt="calculator-icon"></span>
+                <span class="name">Calculator</span>
+                <span class="iconClass"><img src="https://static.thenounproject.com/png/114046-200.png" class="icon"
+                        alt="x-sign"></span>
+            </div>
+            <div class="inputfield">
+                <input type="text" class="input" id="result">
+            </div>
+            <div class="row">
+                <button class="btn" onclick="getNumber('7');">7</button>
+                <button class="btn" onclick="getNumber('8');">8</button>
+                <button class="btn" onclick="getNumber('9');">9</button>
+                <button class="btn" onclick="getNumber('/');">/</button>
+                <button class="btn" onclick="clearInput();">C</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="getNumber('4');">4</button>
+                <button class="btn" onclick="getNumber('5');">5</button>
+                <button class="btn" onclick="getNumber('6');">6</button>
+                <button class="btn" onclick="getNumber('*');">*</button>
+                <button class="btn" onclick="getNumber('(');">(</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="getNumber('1');">1</button>
+                <button class="btn" onclick="getNumber('2');">2</button>
+                <button class="btn" onclick="getNumber('3');">3</button>
+                <button class="btn" onclick="getNumber('-');">-</button>
+                <button class="btn" onclick="getNumber(')');">)</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="getNumber('0');">0</button>
+                <button class="btn" onclick="getNumber('00');">00</button>
+                <button class="btn" onclick="getNumber('.');">.</button>
+                <button class="btn" onclick="getNumber('+');">+</button>
+                <button class="btn" onclick="getNumber('%');">%</button>
+            </div>
+            <div class="equal">
+                <button class="btnEqual" onclick="getResult();">=</button>
+            </div>
+        </div>
+    </div>
+    <div class="myName">
+        <h1 style="text-align: center; margin-top: 20px; color:steelblue"> Developed By: Muhammad Aamir Noor</h1>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
